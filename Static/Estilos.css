@@ -1,0 +1,183 @@
+.theme-switch {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000;
+}
+
+.support-switch {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+.form-check-input {
+    cursor: pointer;
+}
+
+.emotional-support {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: none;
+    max-width: 300px;
+    pointer-events: none;
+}
+
+[data-bs-theme="dark"] {
+    color-scheme: dark;
+}
+
+[data-bs-theme="dark"] .card {
+    background-color: #2d2d2d;
+}
+
+[data-bs-theme="dark"] .CodeMirror {
+    background-color: #1e1e1e;
+}
+
+.CodeMirror {
+    height: 300px;
+    border: 1px solid #ddd;
+}
+
+.error-line {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.error-underline {
+    border-bottom: 2px wavy red;
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilos para modo claro */
+[data-bs-theme="light"] .error-line {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+[data-bs-theme="light"] .error-underline {
+    border-bottom: 2px wavy red;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+/* Estilos para modo oscuro */
+[data-bs-theme="dark"] .token-table th {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] .token-table td {
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] .token-table tr:nth-child(even) {
+    background-color: #383838;
+}
+
+[data-bs-theme="dark"] .token-table tr:hover {
+    background-color: #454545;
+}
+
+[data-bs-theme="dark"] .token-table tr.error-row {
+    background-color: rgba(220, 53, 69, 0.2) !important;
+}
+
+[data-bs-theme="dark"] .token-table tr.error-row:hover {
+    background-color: rgba(220, 53, 69, 0.3) !important;
+}
+
+[data-bs-theme="dark"] #resultados {
+    background-color: #2d2d2d !important;
+    color: #ffffff;
+}
+
+.turing-tape {
+    font-family: monospace;
+    font-size: 24px;
+    letter-spacing: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.turing-head {
+    color: red;
+    font-weight: bold;
+}
+
+.watermark {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+}
+
+#resultado-turing {
+    font-family: monospace;
+    white-space: pre;
+}
+
+.clasificacion-turing {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+.dropdown-menu {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.dropdown-header {
+    font-weight: bold;
+    color: #495057;
+    font-size: 1rem;
+    background-color: #e9ecef;
+}
+
+.token-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-family: monospace;
+}
+
+.token-table th, .token-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.token-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.token-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.token-table tr:hover {
+    background-color: #f2f2f2;
+}
+
+.token-table tr.error-row {
+    background-color: rgba(255, 0, 0, 0.1) !important;
+}
+
+.token-table tr.error-row:hover {
+    background-color: rgba(255, 0, 0, 0.2) !important;
+}
+
+.token-table tr.error-row td {
+    color: #dc3545;
+} 
